@@ -1,0 +1,15 @@
+.meals-container {
+    background: rgb(253, 253, 253);
+    border: 1px solid rgb(104, 101, 101);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 10px;
+}
+
+.price {
+    color: brown;
+}

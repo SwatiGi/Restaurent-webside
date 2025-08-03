@@ -1,6 +1,6 @@
 
 import "./foodSummery.css"
-import image from "../assets/banner.jpg"
+
 const FoodSummery = () => {
     return (
         <>

@@ -1,12 +1,18 @@
 import React from 'react'
 import Header from './components/Header'
-import FoodSummery from './components/FoodSummery'
+
+import Meals from './components/Meal/Meals'
+import FoodSummery from './components/FoodDetail/FoodSummery'
+
+
+
 
 const App = () => {
   return (
     <>
       <Header />
-      <FoodSummery/>
+  <FoodSummery/>
+      <Meals/>
     </>
   )
 }
