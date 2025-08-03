@@ -1,0 +1,11 @@
+.summery-container {
+    background: #413939;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+
+}

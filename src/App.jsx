@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from './components/Header'
+import FoodSummery from './components/FoodSummery'
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-    </div>
+    <>
+      <Header />
+      <FoodSummery/>
+    </>
   )
 }
 

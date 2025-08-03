@@ -3,7 +3,10 @@
     height: 100px;
     display: flex;
     justify-content: space-between;
-    background-image: url();
+    position: sticky;
+
+
+
 }
 
 .react-meals {
