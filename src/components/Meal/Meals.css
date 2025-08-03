@@ -8,8 +8,37 @@
     margin-top: 20px;
     box-sizing: border-box;
     box-shadow: 2px 5px 10px;
+    /* display: flex; */
+
 }
 
 .price {
     color: brown;
+}
+
+.add-btn {
+    background: brown;
+    display: flex;
+
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.input {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 30px;
+    padding-left: 25px;
+    font-size: 22px;
+    color: black;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
 }
