@@ -3,7 +3,8 @@ import mealsData from "./MealsList"
 import "./Meals.css"
 import { FaPlus } from 'react-icons/fa';
 const Meals = () => {
-  let [count, setCount] = useState(1);
+  let [count, setCount] = useState(2);
+  let [showModal, setShowModal] = useState(true);
   console.log(mealsData)
   let handleCount = (id) => {
     setCount((prevCounts) => ({
@@ -24,13 +25,13 @@ const Meals = () => {
           
           </div>
           <div className='amount'>
-            <h3>Amount</h3>
+            <div className='amount-div'>{showModal&&<h3 onClick={()=>showModal(!showModal)}>Amount</h3>}
               <input
                 type="text"
                 disabled
                 className='input'
                value={count[data.id] ?? 0}
-              />
+              /></div>
             <button onClick={()=>handleCount(data.id)} className='add-btn'>  <FaPlus /> Add</button></div>
           
           </div>

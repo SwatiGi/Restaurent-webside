@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MdShoppingCart } from 'react-icons/md';
 import "./Header.css"
+import Modal from './Portal/Modal'
 const Header = () => {
+  let [toggal,setToggal] = useState(true)
   return (
       <div className='header'>
       <div className='react-meals'>ReactMeals</div>
-      <div className='icon-container'>
+      {toggal?<div onClick={()=>setToggal(!toggal)} className='icon-container'>
         <MdShoppingCart color='white' size={22} />
         <p className='your-cart' >Your Cart</p>
         <button className='count-btn'>0</button>
-      </div>
+      </div>:  <Modal onclose={() => setToggal(true)}>
+          <p>Your cart items will show here</p>
+        </Modal>}
+      
           
       </div>
   )

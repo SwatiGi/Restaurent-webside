@@ -7,6 +7,7 @@ import FoodSummery from './components/FoodDetail/FoodSummery'
 
 
 
+
 const App = () => {
   return (
     <>
