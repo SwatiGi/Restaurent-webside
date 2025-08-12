@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
 import mealsData from "./MealsList"
 import "./Meals.css"
 import { FaPlus } from 'react-icons/fa';
+import { useContext } from "react"
+import CardContext from "../../store/CardContext"
+import React from "react";
 const Meals = () => {
-  let [count, setCount] = useState(2);
-  let [showModal, setShowModal] = useState(true);
-  console.log(mealsData)
+ let {count,setCount} = useContext(CardContext)
   let handleCount = (id) => {
     setCount((prevCounts) => ({
       ...prevCounts,
@@ -25,7 +25,7 @@ const Meals = () => {
           
           </div>
           <div className='amount'>
-            <div className='amount-div'>{showModal&&<h3 onClick={()=>showModal(!showModal)}>Amount</h3>}
+            <div className='amount-div'><h3>Amount</h3>
               <input
                 type="text"
                 disabled
