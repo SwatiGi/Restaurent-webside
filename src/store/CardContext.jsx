@@ -1,6 +1,6 @@
-import { createContext } from "react"
+import { createContext } from "react";
 
+// Context banaya
+const CardContext = createContext();
 
-let CardContext = createContext()
-
-export default CardContext
+export default CardContext;
